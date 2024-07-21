@@ -1,0 +1,35 @@
+:root {
+  --color: #fffdfd;
+  --text-shadow: rgba(0,0,0,0.7);
+  --white-color: #fff;
+  --active-color: #007bff;
+  --bg-color: #615b5b;
+}
+
+header {
+  margin: 0%;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--bg-color);
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  margin: 10px;
+  display: inline;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--white-color);
+}
+header nav ul li a:hover {
+  color: var(--active-color);
+}
+/* active  */
+.active {
+  color: var(--active-color);
+}
