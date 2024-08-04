@@ -1,0 +1,219 @@
+:root {
+  --background-color-primary: #fff;
+  --background-color: #f1f1f1;
+  --text-color: #333; 
+  --text-hover: #b81717;
+  --box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  --btn-color: #fd978cb0;
+  --btn-color-hover: #f27567b0;
+  --footer-background-color: rgba(128, 128, 128, 0.428);
+}
+header {
+  background-color: var(--background-color-primary);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+}
+header ul {
+  list-style-type: none;
+}
+header ul li {
+  display: inline;
+  margin-right: 10px;
+}
+header ul li a {
+  font-size: 22px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: var(--text-hover);
+}
+header button {
+  background-color: var(--btn-color);
+  color: var(--background-color-primary);
+  font-size: 16px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  float: right;
+  margin-right: 10px;
+}
+ header button a {
+  text-decoration: none;
+  color: var(--background-color-primary);
+  font-size: 20px;
+}
+header button:hover {
+  background-color: var(--btn-color-hover);
+}
+footer {
+  background-color: var(--footer-background-color);
+  padding: 10px;
+  text-align: center;
+  font-size: 22px;
+}
+footer ul {
+  list-style-type: none;
+  margin-top: 10px;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  display: inline;
+  margin-right: 10px;
+}
+footer ul li a {
+  font-size: 20px;
+  color: var(--background-color);
+  text-decoration: none;
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+footer .social-media a {
+  margin-right: 10px;
+  font-size: 25px;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 255, 0.358);
+}
+.social-media .facebook {
+  color: #3b5998;
+}
+.social-media .facebook:hover {
+  color: #1d3465;
+}
+.social-media .twitter {
+  color: #1da1f2;
+}
+.social-media .twitter:hover {
+  color: #0377a5;
+}
+.social-media .instagram {
+  color: #c13584;
+}
+.social-media .instagram:hover {
+  color: #a42665;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.contact-info {
+  margin-left: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 500px;
+  height: 300px;
+  background-color:var(--background-color);
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+.contact-info .heading {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 28px;
+  color: var(--text-color);
+}
+.contact-msg {
+  margin-left: 200px;
+  width: 400px;
+  margin-bottom: 20px;
+  height: auto;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: var(--text-color);
+  text-align: center;
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  
+}
+.contact-msg .block input, textarea, button {
+  display: block;
+}
+.block input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.block textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+}
+.block .btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn button {
+  background-color: #3b5998;
+  border: none;
+  color: var(--background-color-primary);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+}
+.btn button:hover {
+  background-color: #1d3465;
+}
+@media only screen and (max-width: 768px) {
+  header {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .contact-info {
+    margin-left: 10px;
+    width: 90%;
+    padding: 15px;
+  }
+  .contact-msg {
+    margin-left: 10px;
+    width: 90%;
+    /* padding: 20px; */
+  }
+  .contact-msg input textarea {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 535px) {
+  .contact-info {
+    margin-left: 10px;
+    width: 90%;
+    padding: 10px;
+  }
+  .contact-msg input textarea {
+    width: 90%;
+  }
+  .contact-msg {
+    margin-left: 10px;
+    width: 90%;
+    padding: 10px;
+  }
+  footer {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./About.html">About</a></li>
+        <li><a href="./Contact.html">Contact</a></li>
+        <button><a href="../pages/users/Login.html">Login</a></button>
+      </ul>
+    </nav>
+  </header>
+  <div class="flex">
+    <div class="contact-info">
+      <h1 class="heading">Contact Information</h1>
+      <p>
+        Name: John Doe<br>
+        Email: johndoe@example.com<br>
+        Phone: 123-456-7890
+      </p>
+    </div>
+    <div class="contact-msg">
+      <h2 class="heading">Send a Message</h2>
+      <form class="block" action="submit.php" method="post">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <div class="btn">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2021 - All rights reserved</p>
+    <ul>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    <div class="social-media">
+      <a href="#" class="facebook"><i class='bx bxl-facebook-circle' ></i></a>
+      <a class="twitter" href="#"><i class='bx bxl-twitter'></i></a>
+      <a class="instagram" href="#"><i class='bx bxl-instagram' ></i></a>
+    </div>
+  </footer>
+</body>
+</html>
